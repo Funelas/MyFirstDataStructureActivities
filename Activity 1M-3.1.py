@@ -14,6 +14,7 @@ class doublyLinkedList:
         if self.start_node is None:
             new_node = Node(data)
             self.start_node = new_node
+            return 
         n = self.start_node
 
         #Iterate until the next reaches None
@@ -26,6 +27,7 @@ class doublyLinkedList:
     def DeleteAtStart(self):
         if self.start_node is None:
             print(f"The Linked list is empty, no element to delete")
+            return
         elif self.start_node.next is None:
             self.start_node = None 
             return 
@@ -36,6 +38,7 @@ class doublyLinkedList:
         # Check if the List is empty
         if self.start_node is None:
             print("The Linked list is empty, no element to delete")
+            return
         elif self.start_node.next is None:
             self.start_node = None 
             return 
@@ -62,8 +65,8 @@ class Node:
         self.prev = None 
 
 my_double_linkedlist = doublyLinkedList()
-my_double_linkedlist.start_node = Node("Hello")
 
+my_double_linkedlist.start_node = Node("Hello")
 n2 = Node("world")
 n3 = Node("John")
 n4 = Node("Doe")
@@ -76,8 +79,17 @@ my_double_linkedlist.start_node.next = n2
 n2.next, n3.next, n4.next, n5.next, n6.next, n7.next = n3,n4,n5,n6,n7,n8 
 n2.prev, n3.prev, n4.prev, n5.prev, n6.prev, n7.prev, n8.prev = my_double_linkedlist.start_node, n2,n3,n4,n5,n6,n7
 
-my_double_linkedlist.Display()
+
+# my_double_linkedlist.Display() # Start for inserting a value if the double linked list is empty
+# a = input("Enter value you want to insert if the Double Linked List is empty: ")
+# my_double_linkedlist.InsertToEmptyList(a) # End for inserting a value if the double linked list is empty
+
+# my_double_linkedlist.Display() # Start for deleting the head of the double linked list
+# my_double_linkedlist.DeleteAtStart() # End for deleting the head of the double linked list
+
+# my_double_linkedlist.Display() # Start for deleting the end of the double linked list
+# my_double_linkedlist.delete_at_end() # End for deleting the end of the double linked list
+
+my_double_linkedlist.Display() # For Displaying / Traversing Contents of Double Linked List
 
 
-my_double_linkedlist.InsertToEnd("Ok Tayo?")
-my_double_linkedlist.Display()

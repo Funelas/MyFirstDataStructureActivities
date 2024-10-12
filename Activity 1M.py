@@ -79,43 +79,46 @@ class Node:
         self.next = None
 
 list1 = linkedlist()
-list1.head = Node("Data")
-s2 = Node("Structure")
-s3 = Node("Data")
-s4 = Node("Mining")
-s5 = Node("Data")
-s6 = Node("Cleaning")
-s7 = Node("Game")
-s8 = Node("Development")
+list1.head = Node("Data") # Example data for Module 3.1 Methods
+s2 = Node("Structure") # Example data for Module 3.1 Methods
+s3 = Node("Data") # Example data for Module 3.1 Methods
+s4 = Node("Mining") # Example data for Module 3.1 Methods
+s5 = Node("Data") # Example data for Module 3.1 Methods
+s6 = Node("Cleaning") # Example data for Module 3.1 Methods
+s7 = Node("Game") # Example data for Module 3.1 Methods
+s8 = Node("Development") # Example data for Module 3.1 Methods
 
-list1.head.next = s2 
-s2.next = s3 
-s3.next = s4
-s4.next = s5 
-s5.next = s6 
-s6.next = s7 
-s7.next = s8 
+list1.head.next = s2 # Example data for Module 3.1 Methods
+s2.next = s3 # Example data for Module 3.1 Methods
+s3.next = s4 # Example data for Module 3.1 Methods
+s4.next = s5 # Example data for Module 3.1 Methods
+s5.next = s6 # Example data for Module 3.1 Methods
+s6.next = s7 # Example data for Module 3.1 Methods
+s7.next = s8 # Example data for Module 3.1 Methods
 
-list1.printlist()
-a = input("Search: ")
-list1.searchelement(a)
+# list1.head = Node("Data") # Example data for Module 3 Methods
+# e2 = Node("Structure")  # Example data for Module 3 Methods
+# e3 = Node("Python")  # Example data for Module 3 Methods
 
+# list1.head.next = e2 # Example data for Module 3 Methods
+# e2.next = e3  # Example data for Module 3 Methods
 
-# Start of Module 3
-# list1.head = Node("Data")
-# e2 = Node("Structure")
-# e3 = Node("Python")
+# list1.athead("Welcome to") # For Inserting a data at the head of linked list
+# list1.atend("Linked List") # For inserting a data at the end of linked list
 
-# list1.head.next = e2
-# e2.next = e3 
-
-# list1.athead("Welcome to")
-# list1.atend("Linked List")
-
-# position = int(input("\n Where to insert Data, please indicate position number:"))
+# position = int(input("\n Where to insert Data, please indicate position number:")) # Start for inserting a data at a given position in the linked list
 # data = "Stack"
 # list1.inpos(data, position)
-# list1.searchelement("Linked List")
-# list1.printlist()
-# End of Module 3
+# list1.searchelement("Linked List") # End for inserting a data at a given position in the linked list
 
+# a = input("Search: ") # Start for Searching a Node in the Linked List
+# list1.searchelement(a) # End for searching a Node in the linked list
+
+
+# list1.printlist() # Start For Deleting a Node in the Linked List
+# a = input("\nEnter value you want to delete: ")
+# list1.deleteNode(a)
+# print("\nNew Linked List Content: ") # End For Deleting a Node in the Linked List
+
+
+list1.printlist() # For Displaying the Linked List
